@@ -1,2 +1,2 @@
-summer-programming-camp
+Summer Programming Camp
 =======================
