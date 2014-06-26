@@ -37,7 +37,7 @@ a:hover, a:active, a:focus {
 /* ~~ This fixed width container surrounds all other divs ~~ */
 .container {
 	width: 960px;
-	background: #FFFFFF url(../images/bg.png) repeat-y;
+	background: #FFFFFF url(http://deepdivecodeclass.businesscatalyst.com/images/bg.png) repeat-y;
 	/* ~~ for the desktop view the background for the 3 columns is probided by the background-image for the container div. This is necessary since the sidebars and content divs are varying heights.  ~~ */
 	margin: 0 auto;
 }
