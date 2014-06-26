@@ -1,0 +1,143 @@
+@charset "UTF-8";
+body {
+	font: 100%/1.25 Verdana, Arial, Helvetica, sans-serif;
+	background: #42413C;
+	margin: 20;
+	padding: 0;
+	color: #000;
+}
+
+/* ~~ Element/tag selectors ~~ */
+ul, ol, dl {
+	padding: 0;
+	margin: 0;
+}
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0;
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-bottom: .5em;
+}
+a img {
+	border: none;
+}
+/* ~~ Styling for your site's links must remain in this order - including the group of selectors that create the hover effect. ~~ */
+a:link {
+	color: #1A2289;
+	text-decoration: underline;
+}
+a:visited {
+	color: #999999;
+	text-decoration: underline;
+}
+a:hover, a:active, a:focus {
+	text-decoration: none;
+}
+
+/* ~~ This fixed width container surrounds all other divs ~~ */
+.container {
+	width: 960px;
+	background: #FFFFFF url(../images/bg.png) repeat-y;
+	/* ~~ for the desktop view the background for the 3 columns is probided by the background-image for the container div. This is necessary since the sidebars and content divs are varying heights.  ~~ */
+	margin: 0 auto;
+}
+
+/* ~~ The header design will accommodate a logo or banner image up to 960 pixels wide.  ~~ */
+.header {
+	background: #999;
+	padding: 20px;
+	border-bottom: 3px solid #000;
+}
+/* ~~ These are the columns for the layout. ~~ 
+The background colors of the columns match those in the background image of the container. This is redundant on the desktop but plays an important role for viewing with a tablet or phone.
+*/
+.sidebar1 {
+	float: left;
+	width: 180px;
+	padding: 10px 0;
+	background: #002289;
+	color: #FFF;
+}
+.content {
+	padding: 10px 0;
+	width: 600px;
+	float: left;
+	background: #FFF;
+}
+.sidebar2 {
+	float: left;
+	width: 180px;
+	background: #CCD0E7;
+	padding: 10px 0;
+	color: #1A2289;
+}
+
+.content ul, .content ol { 
+	padding: 0 15px 15px 40px;
+}
+
+ul.nav {
+	list-style: none;
+	border-top: 1px solid #FFF;
+	margin: 0;
+	background: #0057A2;
+}
+ul.nav li {
+	border-bottom: 1px solid #FFF;
+}
+ul.nav a, ul.nav a:visited {
+	padding: 5px 5px 5px 15px;
+	display: block;
+	width: 160px;
+	text-decoration: none;
+	background: #002289;
+	color: #FFF;
+}
+ul.nav a:hover, ul.nav a:active, ul.nav a:focus {
+	background: #CBD1E8;
+	color: #002289;
+}
+
+.footer {
+	position: relative;/* this gives IE6 hasLayout to properly clear */
+	clear: both;
+	background: #EDEDED;
+	vertical-align: text-bottom;
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border-top: 3px solid #000;
+}
+.footer p {
+	font-size: 0.75em;
+}
+
+/* ~~ Miscellaneous float/clear classes ~~ */
+.fltrt {
+	float: right;
+	margin-left: 8px;
+}
+.fltlft {
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat {
+	clear:both;
+	height:0;
+	font-size: 1px;
+	line-height: 0px;
+}
+
+/* The following two styles make adjust the size of images in the header and content divs for all platforms */
+.header img {
+	max-width: 100%;
+	height: auto;
+}
+.content img {
+	max-width: 100%;
+	height: auto;
+}
+pre {
+	margin-right: 40px;
+	margin-left: 40px;
+}
