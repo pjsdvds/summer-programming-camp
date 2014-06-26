@@ -1,0 +1,22 @@
+@charset "utf-8";
+/* here we adjust the width of the container div to accomodate tablet devices, remove the background image and replace it with a dark blue background-color. */
+.container {
+	width: 768px;
+	background: #002289 url(../images/bg_768.png);
+}
+/* we leave the sidebar widths at 180px and  reduce the width of the content div to fit the narrower layout. The content div's white background is used to form the columns. This layout assumes that the content area will be taller than both sidebars */
+.content {
+	width: 408px;
+}
+/* the size of the h1 and h2 tags has ben adjusted downward for better appearance (and wrapping) on small screens */
+h1 {
+	font-size: 1.6em;
+}
+h2 {
+	font-size: 1.35em;
+}
+/* this rule insures that images floated with the .fltrt and .fltlft styles are resized to allow room for text to float around them */
+img.fltrt, img.fltlft {
+	max-width: 50%;
+	height: auto;
+}
