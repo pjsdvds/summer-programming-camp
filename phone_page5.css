@@ -1,0 +1,52 @@
+@charset "utf-8";
+/* this rule reduces the overall font-size to give us a bit more room */
+body {
+	font-size: 86%;
+}
+/* the size of the h1 and h2 tags has ben adjusted downward for better appearance (and wrapping) on small screens */
+h1 {
+	font-size: 1.6em;
+}
+h2 {
+	font-size: 1.35em;
+}
+/* the container is set to dospaly full screen width for phones */
+.container {
+	width: 100%;
+	margin: 0;
+	overflow: hidden;
+	background: #FFF;
+}
+/* the left sidebar is set to full width and now appears above the content div */ 
+.sidebar1 {
+	width: 100%;
+}
+/* the nav list items are floated left and set to 50% to form to columns of links */
+ul.nav li {
+	width: 50%; 
+	float:left;
+}
+/* padding on links is adjusted to give more room for a finger click, width is set to full the full space available and a right border is added to separate the links */
+ul.nav a, ul.nav a:visited {
+	padding: 10px 0 10px 6px;
+	width: auto;
+	border-right: solid 1px #FFF;
+}
+/* the content div is set to full width */ 
+.content {
+	width: 100%;
+}
+/* the left sidebar is set to full width and now appears below the content div */ 
+.sidebar2 {
+	clear: both;
+	float: none;
+	width: auto;
+}
+/* this rule insures that images floated with the .fltrt and .fltlft styles are resized to allow room for text to float around them */
+img.fltrt, img.fltlft {
+	max-width: 50%;
+	height: auto;
+}
+.header {
+	background: #999;
+}
